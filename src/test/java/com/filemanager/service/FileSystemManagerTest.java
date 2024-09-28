@@ -1,17 +1,15 @@
 package com.filemanager.service;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.Collections;
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
-import com.filemanager.models.Folder;
 
 public class FileSystemManagerTest {
-    // Adding a file to an existing folder
     @Test
     public void test_adding_file_to_existing_folder() {
         FileSystemManagerImpl fileSystemManager = new FileSystemManagerImpl("root");
